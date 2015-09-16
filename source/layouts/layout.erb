@@ -12,10 +12,11 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "partials/navbar" %>
     <%= yield %>
 
     <!-- Javascripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js"></script>
     <%= javascript_include_tag  "all" %>
   </body>
 </html>

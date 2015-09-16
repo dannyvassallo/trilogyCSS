@@ -1,13 +1,73 @@
 ---
-title: Welcome to Middleman
+title: CSS Trilogy Education
 ---
 
 <div class="container">
+	<div class row>
+		<div class="col-lg-12">
+			<h1>The CSS Box Model</h1>
+			<p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.</p>
+			<p>The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.</p>
+			<p>The box model allows us to add a border around elements, and to define space between elements.</p>
+			<p>The image below illustrates the box model:</p>			
+		</div>
+		<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+			<%= tag :img, :src => "images/boxmodel-image.png", :class => 'full-w'%>
+		</div>
+		<div class="col-lg-12 boxmodel">
+			<code data-gist-id="7acc96e273a97407932e"></code>
+		</div>
+	</div>
+	<!-- Ways To Use Css -->
 	<div class="row">
-		<div class="col-lg-12 jumbotron text-center">
-			  <h2>The most awesome Middleman Boilerplate!</h2>
-			  <p>made by: Danny Vassallo <i class="fa fa-thumbs-up"></i></p>
-			  <p><a class="btn btn-primary btn-lg" href="https://danny-portfolio.herokuapp.com" role="button">Check me out here!</a></p>
+		<div class="col-lg-12">
+			<h1>Ways to Use CSS</h1>			
+			<p><a href="http://www.cssnewbie.com/inline-in-document-and-linked-css/#.VfjGEZ1Viko" target="_blank">Source</a></p>	
+		</div>
+		<div class="col-lg-12">
+			<code data-gist-id="67c1a79d23aacd3338f1"></code>
+		</div>
+	</div>	
+	<!-- BEST PRACTICES -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>CSS Best Practices</h1>			
+			<p><a href="http://webdesign.about.com/od/css/a/aa073106.htm" target="_blank">Source</a></p>	
+		</div>
+		<div class="col-lg-12">
+			<h3>Inline Styles Are Not Best Practice</h3>
+			<p>Inline styles, while they have a purpose, are not the best way to maintain your Web site.</p>
+			<ol><li><b>Inline styles don't separate content from design</b><br>In fact, inline styles are exactly the same as embedded font tags and other design tags that we're trying to stop using. The styles only affect the exact tag they are applied to, and while that might give you more control, it also makes other aspects of your design and development more difficult. </li></ol>
+			<ol class="cb-split"><li><b>Inline styles cause more maintenance headaches</b><br>When you're working with style sheets, it can sometimes be very difficult to figure out where a style is being set. When you add a mixture of inline, embedded, and external styles then you have even more locations to look. And if you work on a Web design team or have to redesign or maintain a site built by someone else, then you're going to have even more trouble. Then, once you find the style and get rid of it, you'll have to get rid of it on every element on every page where it's been placed. Which can increase your maintenance work astronomically. </li><li><b>Inline styles are not as accessible</b><br>While a screen reader or other assistive device might be able to handle the attributes and tags effectively, some of the older devices don't and can result in some strange Web pages. Plus, the extra characters and text can affect how your page is viewed by a robot such as a search engine, so your page optimization would not do as well as a page with external style sheets. </li><li><b>Inline styles make your pages bigger</b><br>If you set a style on every paragraph on your site, you can do it once with like 6 lines of code and an external style sheet. But if you do it with an inline style, you'll have to add those styles to every paragraph of your site. If you have 5 lines of CSS, that's 5 lines multiplied by every paragraph on your site. That bandwidth can add up in a hurry.</li></ol>
+			<h3>What Is the Best Practice for CSS Instead of Inline Styles</h3>
+			<p>Instead of using inline styles, use external style sheets. External style sheets give you all the benefits of CSS best practices and are easy to use. If you must put styles in a specific HTML document, put them in embedded style sheets in the &lt;head&gt; of your document. That way, at least they're still separate from the content. Avoid using inline styles for any styles on your Web page.</p>
+		</div>
+	</div>		
+	<!-- HTML5 ELEMENTS -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>All HTML5 Elements</h1>
+			<p><a href="http://www.html-5-tutorial.com/all-html-tags.htm" target="_blank">Source</a></p>		
+			<%= partial 'partials/html5' %>
+		</div>
+	</div>	
+	<!-- THE POSITION PROPERTY -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>The position Property</h1>
+			<p><a href="http://www.w3schools.com/css/css_positioning.asp" target="_blank">Source</a></p>
+			<p>The position property specifies the type of positioning method used for an element (static, relative, fixed or absolute).</p>
+			<br>
+			<code data-gist-id="0f5cabc7ce2d692407db"></code>
+		</div>
+	</div>
+	<!-- ALL CSS POSITIONING PROPERTIES -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>All CSS Positioning Properties</h1>
+			<p><a href="http://www.w3schools.com/css/css_positioning.asp" target="_blank">Source</a></p>
+			<br>
+			<code data-gist-id="591420ae2cebda9eae3f"></code>
 		</div>
 	</div>
 </div>
